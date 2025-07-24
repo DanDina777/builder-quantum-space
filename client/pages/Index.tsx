@@ -4,51 +4,63 @@ const articles = [
   {
     id: 1,
     title: "Summer Cold Wave: What You Need to Know",
-    summary: "Despite warmer weather, summer colds are surprisingly common. Learn about the unique challenges and prevention strategies for staying healthy during the summer months.",
-    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "Despite warmer weather, summer colds are surprisingly common. Learn about the unique challenges and prevention strategies for staying healthy during the summer months.",
+    image:
+      "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=250&fit=crop&crop=center",
     readTime: "5 min read",
-    date: "March 15, 2024"
+    date: "March 15, 2024",
   },
   {
     id: 2,
     title: "Cold or COVID-19: How to Tell the Difference",
-    summary: "With overlapping symptoms, it can be challenging to distinguish between a common cold and COVID-19. Here's what medical experts recommend for accurate identification.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "With overlapping symptoms, it can be challenging to distinguish between a common cold and COVID-19. Here's what medical experts recommend for accurate identification.",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=250&fit=crop&crop=center",
     readTime: "7 min read",
-    date: "March 12, 2024"
+    date: "March 12, 2024",
   },
   {
     id: 3,
     title: "Home Remedies for a Runny Nose: What Really Works?",
-    summary: "Separate fact from fiction with this evidence-based guide to home remedies. Discover which treatments are scientifically proven to provide relief.",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "Separate fact from fiction with this evidence-based guide to home remedies. Discover which treatments are scientifically proven to provide relief.",
+    image:
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&crop=center",
     readTime: "4 min read",
-    date: "March 10, 2024"
+    date: "March 10, 2024",
   },
   {
     id: 4,
     title: "Building Immunity: Your First Line of Defense",
-    summary: "Learn about practical, science-backed methods to strengthen your immune system and reduce your risk of catching a cold this season.",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "Learn about practical, science-backed methods to strengthen your immune system and reduce your risk of catching a cold this season.",
+    image:
+      "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&h=250&fit=crop&crop=center",
     readTime: "6 min read",
-    date: "March 8, 2024"
+    date: "March 8, 2024",
   },
   {
     id: 5,
     title: "When to Seek Medical Care for Cold Symptoms",
-    summary: "Most colds resolve on their own, but certain symptoms warrant professional medical attention. Know when it's time to call your doctor.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "Most colds resolve on their own, but certain symptoms warrant professional medical attention. Know when it's time to call your doctor.",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop&crop=center",
     readTime: "3 min read",
-    date: "March 5, 2024"
+    date: "March 5, 2024",
   },
   {
     id: 6,
     title: "The Science Behind Cold and Flu Season",
-    summary: "Understanding why respiratory illnesses peak during certain times of the year can help you prepare and protect yourself more effectively.",
-    image: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=250&fit=crop&crop=center",
+    summary:
+      "Understanding why respiratory illnesses peak during certain times of the year can help you prepare and protect yourself more effectively.",
+    image:
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400&h=250&fit=crop&crop=center",
     readTime: "8 min read",
-    date: "March 3, 2024"
-  }
+    date: "March 3, 2024",
+  },
 ];
 
 const helpfulTips = [
@@ -60,8 +72,8 @@ const helpfulTips = [
       "Eat a balanced diet rich in vitamins C and D",
       "Exercise regularly but don't overdo it",
       "Manage stress through meditation or yoga",
-      "Stay hydrated with water and herbal teas"
-    ]
+      "Stay hydrated with water and herbal teas",
+    ],
   },
   {
     icon: "🏥",
@@ -71,8 +83,8 @@ const helpfulTips = [
       "Symptoms lasting more than 10 days",
       "Severe headache or sinus pain",
       "Difficulty breathing or chest pain",
-      "Persistent cough with blood"
-    ]
+      "Persistent cough with blood",
+    ],
   },
   {
     icon: "🏠",
@@ -82,16 +94,16 @@ const helpfulTips = [
       "Drink plenty of warm fluids",
       "Use a humidifier or breathe steam",
       "Gargle with salt water for sore throat",
-      "Try honey for cough relief (not for babies under 1 year)"
-    ]
-  }
+      "Try honey for cough relief (not for babies under 1 year)",
+    ],
+  },
 ];
 
 export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-medical-blue-light">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -110,8 +122,10 @@ export default function Index() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-3">
-            <h2 className="text-2xl font-semibold text-foreground mb-8">Recent Articles</h2>
-            
+            <h2 className="text-2xl font-semibold text-foreground mb-8">
+              Recent Articles
+            </h2>
+
             {/* Articles Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {articles.map((article) => (
@@ -148,8 +162,10 @@ export default function Index() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="sticky top-8">
-              <h2 className="text-2xl font-semibold text-foreground mb-6">Helpful Tips</h2>
-              
+              <h2 className="text-2xl font-semibold text-foreground mb-6">
+                Helpful Tips
+              </h2>
+
               <div className="space-y-6">
                 {helpfulTips.map((section, index) => (
                   <div
@@ -186,8 +202,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <p className="text-medical-gray text-sm">
-              © 2024 All About the Common Cold. Information provided for educational purposes only.
-              Always consult with healthcare professionals for medical advice.
+              © 2024 All About the Common Cold. Information provided for
+              educational purposes only. Always consult with healthcare
+              professionals for medical advice.
             </p>
           </div>
         </div>

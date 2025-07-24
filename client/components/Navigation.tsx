@@ -23,7 +23,7 @@ export default function Navigation() {
               </h1>
             </Link>
           </div>
-          
+
           <div className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => {
               const isActive = location.pathname === item.href;
@@ -35,7 +35,7 @@ export default function Navigation() {
                     "px-3 py-2 text-sm font-medium transition-colors duration-200",
                     isActive
                       ? "text-medical-blue border-b-2 border-medical-blue"
-                      : "text-medical-gray hover:text-medical-blue-dark"
+                      : "text-medical-gray hover:text-medical-blue-dark",
                   )}
                 >
                   {item.name}
@@ -85,7 +85,7 @@ export default function Navigation() {
                   "block px-3 py-2 text-base font-medium transition-colors duration-200",
                   isActive
                     ? "text-medical-blue bg-medical-blue-light"
-                    : "text-medical-gray hover:text-medical-blue-dark hover:bg-medical-blue-light"
+                    : "text-medical-gray hover:text-medical-blue-dark hover:bg-medical-blue-light",
                 )}
               >
                 {item.name}
