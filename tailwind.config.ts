@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Open Sans', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        medical: {
+          blue: "hsl(var(--medical-blue))",
+          "blue-light": "hsl(var(--medical-blue-light))",
+          "blue-dark": "hsl(var(--medical-blue-dark))",
+          gray: "hsl(var(--medical-gray))",
+          "gray-light": "hsl(var(--medical-gray-light))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
